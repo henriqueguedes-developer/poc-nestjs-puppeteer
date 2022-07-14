@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Image url puppeteer</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <section class="gallery min-vh-100">
+    <div class="container-lg">
+      <form class="mb-5">
+        <fieldset>
+          <div class="form-group">
+            <label for="urlInput">Sua url</label>
+            <input type="text" id="url" class="form-control mb-3" placeholder="Digite uma URL">
+          </div>
+
+          <button type="submit" id="send" class="btn btn-primary col-md-12">Enviar</button>
+        </fieldset>
+      </form>
+      <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3" id="result">
+
+      </div>
+    </div>
+  </section>
+  <script src=" https://cdn.socket.io/4.5.0/socket.io.min.js"
+    integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous">
+    </script>
+  <script src="./socket.js"></script>
+
+</body>
+
+</html>
